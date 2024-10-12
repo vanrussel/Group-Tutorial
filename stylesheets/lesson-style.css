@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    color: #4B4453;
+}
+
+body {
+    background-color: #4B4453;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: 4rem 1fr;    
+    grid-template-areas:"navbar navbar"
+                        "sidebar main";
+}
+
+nav {
+    background-color: aliceblue;
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    gap: 2em;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    border: none;
+    border-radius: 50%;
+}
+
+nav a:hover {
+    background-color: #3498DB;
+    transition: ease-in-out 0.1s;
+}
+
+nav a:active {
+    background-color: #00000041;
+}
+
+nav svg {
+    fill: #4B4453;
+}
+
+main {
+    background-color: beige;
+    grid-area: main;
+    font-size: 1.25rem;
+    padding: 3em;
+    overflow-y: auto;
+}
+
+main::-webkit-scrollbar {
+    width: .7rem;
+    height: .7rem;    
+}
+
+main::-webkit-scrollbar-track {
+    background: beige;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: rgb(168, 168, 132);
+}
+
+main h2 {
+    font-size: 3rem;
+    margin-bottom: .25em;
+}
+
+hr {
+    height: 1px;
+    background-color: #4B4453;
+    margin: 3em -1.25em;
+    border: none;
+}
+
+main p {
+    text-align: justify;
+}
+
+aside {
+    background-color: cornflowerblue;
+    grid-area: sidebar;
+    overflow-y: auto;
+    padding-bottom: 4rem;
+}
+
+aside::-webkit-scrollbar {
+    width: .7rem;
+    height: .7rem;
+}
+
+aside::-webkit-scrollbar-track {
+    background: hsl(219, 79%, 66%);
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: hsl(204, 65%, 38%);
+}
+
+aside h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+aside a:link{
+    display: flex;
+    font-size: 1rem;
+    padding: 1em;
+    width: 1em - .5em;
+}
+
+aside a:hover {
+    color: white;    
+    background-color: hsl(204, 65%, 38%);
+}
+
+.active {
+    background-color: hsl(204, 65%, 38%);
+    color: white;
+}
