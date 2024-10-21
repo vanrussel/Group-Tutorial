@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 
-nav {
+header {
     background-color: aliceblue;
     width: 100%;
     height: 4rem;
@@ -29,14 +29,14 @@ nav {
     z-index: 100;
 }
 
-.navLink {
+nav {
     margin-left: auto;
     display: flex;
     height: 100%;
     align-content: center;
 }
 
-.navLink a {
+nav a {
     padding-inline: 1rem;
     align-content: center;
     font-weight: 400;
@@ -44,7 +44,7 @@ nav {
     height: 100%;
 }
 
-.navLink a:hover, .active {
+nav a:hover {
     color: darkcyan;    
     background-color: lightblue;
     transition: ease-in 0.1s;
