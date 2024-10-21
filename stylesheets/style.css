@@ -15,6 +15,7 @@ body {
     background-color: beige;
     min-height: calc(100vh - 4rem);
     width: 100%;
+
 }
 
 header {
@@ -64,6 +65,7 @@ main {
     text-align: center;
     align-content: center;
     text-transform: uppercase;
+    margin-bottom: 4rem;
 }
 
 #courses {
@@ -72,6 +74,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 #courses h1 {
@@ -128,6 +131,7 @@ main {
     width: 100%;
     min-height: 100vh;
     text-align: start;
+    margin-bottom: 4rem;
 }
 
 #groupIntro h1 {
@@ -148,6 +152,7 @@ main {
     width: 100%;
     min-height: 100vh;
     text-align: end;
+    margin-bottom: 4rem;
 }
 
 #groupObj h1 {
@@ -169,6 +174,7 @@ main {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+    margin-bottom: 4rem;
 }
 
 #groupMem h1 {
@@ -206,7 +212,7 @@ main {
     height: 16rem;
     width: 16rem;
     object-fit: cover;
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 1rem;
 }
