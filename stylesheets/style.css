@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     color: #4B4453;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -43,7 +44,8 @@ nav {
     height: 100%;
 }
 
-.navLink a:hover {
+.navLink a:hover, .active {
+    color: darkcyan;    
     background-color: lightblue;
     transition: ease-in 0.1s;
 }
@@ -174,6 +176,7 @@ main {
     text-align: center;
     margin-block: 2rem;
     align-content: center;
+    text-transform: uppercase;
 }
 
 .profileContainer {
@@ -203,7 +206,7 @@ main {
     height: 16rem;
     width: 16rem;
     object-fit: cover;
-    width: 12rem;
-    height: 12rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 1rem;
 }
