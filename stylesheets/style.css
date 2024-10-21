@@ -25,6 +25,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 0 1em;
+    z-index: 100;
 }
 
 .navLink {
@@ -204,6 +205,23 @@ main {
     object-fit: cover;
     width: 12rem;
     height: 12rem;
-    background-color: #845EC2;
     border-radius: 1rem;
+}
+
+main * {
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes fade-in {
+    from {
+        scale: .8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
