@@ -6,12 +6,13 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
     color: #4B4453;
 }
 
 body {
     background-color: beige;
-    height: calc(100vh - 4rem);
+    min-height: calc(100vh - 4rem);
     width: 100%;
 }
 
@@ -23,31 +24,72 @@ nav {
     top: 0;
     display: flex;
     align-items: center;
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
-/* nav::after {
-    content: "";
-    height: 3.2px;
-    width: 100%;
-    background-color: #4B4453;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
+.navLink {
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+    align-content: center;
+}
+
+.navLink a {
+    padding-inline: 1rem;
+    align-content: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.navLink a:hover {
+    background-color: lightblue;
+    transition: ease-in 0.1s;
+}
 
 main {
-    margin-top: 4rem;
     background-color: beige;
+    padding: 0 12rem 0rem 12rem;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+#groupName {
+    width: 100%;
+    height: 100vh;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+#courses {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#courses h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-block: 2rem;
+    align-content: center;
+}
+
+.courseContainer {
     padding: 2rem;
     gap: 2rem;
+    border-radius: 1rem;
+    background-color: burlywood;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-template-rows: auto auto auto;
-    overflow-y: auto;
 }
 
 .tutorial {
+    border-radius: 1rem;
     background-color: blanchedalmond;
     width: auto;
     height: auto;
@@ -58,8 +100,8 @@ main {
     grid-row: span 3;
 }
 
-
 .button {
+    border-radius: 1rem;
     font-size: 1.2rem;
     width: 100%;
     height: 3em;
@@ -74,4 +116,94 @@ main {
 .button:active {
     background-color: steelblue;
     color: #fff;
+}
+
+#groupIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: start;
+}
+
+#groupIntro h1 {
+    font-size: 4rem;
+    margin-block: 2rem;
+    width: 50%;
+}
+
+#groupIntro p {
+    font-size: 1.25rem;
+    width: 50%;
+}
+
+#groupObj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    text-align: end;
+}
+
+#groupObj h1 {
+    font-size: 4rem;
+    margin-block: 2rem;
+    align-self: flex-end;
+    width: 50%;
+}
+
+#groupObj p {
+    font-size: 1.25rem;
+    align-self: flex-end;
+    width: 50%;
+}
+
+#groupMem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#groupMem h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-block: 2rem;
+    align-content: center;
+}
+
+.profileContainer {
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-rows: auto auto;
+    background-color: rgb(97, 210, 214);
+}
+
+.profile {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.profile * {
+    margin-inline: auto;
+}
+
+.pic {
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+    background-color: #845EC2;
+    border-radius: 1rem;
 }
