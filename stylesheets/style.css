@@ -207,21 +207,3 @@ main {
     height: 12rem;
     border-radius: 1rem;
 }
-
-main * {
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-}
-
-@keyframes fade-in {
-    from {
-        scale: .8;
-        opacity: 0;
-    }
-
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-}
