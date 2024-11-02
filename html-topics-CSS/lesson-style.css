@@ -11,9 +11,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style-type: none;
     font-family: 'Poppins', sans-serif;
-    color: #4B4453;
+    color: #222831;
 }
 
 body {
@@ -134,4 +133,11 @@ aside a:link{
 aside a:hover {
     color: white;    
     background-color: #00ADB5;
+}
+
+/* Lesson 1 - Intro to html */
+
+.list {
+    margin: 10px;
+    margin-left: 20px;
 }
