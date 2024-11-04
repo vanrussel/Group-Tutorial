@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Smash</title>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
+        </a>
+        <h2 style="text-transform: uppercase;">team smash / <span style="font-weight: 400;">css tutorial</span></h2>
+
+    </nav>
+    <aside> 
+        <h3>Lesson Contents</h3>
+        <a href="#content-ONE">Introduction</a>
+        <a href="#content-TWO">Lesson Overview</a>
+        <a href="#content-THREE">Basic Syntax</a>
+        <a href="#content-FOUR">Essential CSS Properties</a>
+        <a href="#content-FIVE">Adding CSS to HTML</a>
+        <a href="#content-SIX">Conclusion</a>
+    </aside>
+
+    <main>
+        <h2 >Lesson 1: Intro to CSS</h2>
+        <h1 id="content-ONE">Introduction to CSS</h1>
+        <p>Previously, you learned how HTML structures a web page. Now, let’s make it look appealing with CSS.</p>
+        
+        <hr>
+    
+        <h2 id="content-TWO">Lesson Overview</h2>
+        <p>This lesson covers essential topics that will equip you with the skills to style your web pages effectively.</p>
+        
+        <hr>
+    
+        <h2 id="content-THREE">Basic Syntax</h2>
+        <p>At its core, CSS is composed of rules that dictate how HTML elements are displayed on the web page. Each rule consists of a selector and a list of declarations.</p>
+        
+        <pre><code>
+            /* Basic CSS syntax example */
+            h1 {
+                color: blue;
+                font-size: 24px;
+            }
+        </code></pre>
+    
+        
+        <hr>
+    
+        <h2 id="content-FOUR">Essential CSS Properties</h2>
+        <p>Below are some essential CSS properties that will help you start styling web pages effectively.</p>
+    
+        <h3 id="content-FIVE">Color and Background</h3>
+        <p>The <code>color</code> property sets the color of text, and <code>background-color</code> defines the background color of elements.</p>
+    
+        <pre><code>
+            /* Color and background example */
+            body {
+                background-color: #f0f0f0;
+            }
+            p {
+                color: #333;
+            }
+        </code></pre>
+        
+        <hr>
+    
+        <h3>Typography</h3>
+        <p>CSS provides several properties to control font styles like <code>font-family</code>, <code>font-size</code>, and <code>text-align</code>.</p>
+    
+        <pre><code>
+            /* Typography example */
+            h1 {
+                font-family: 'Arial', sans-serif;
+                font-size: 24px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        </code></pre>
+        
+        <hr>
+    
+        <h3 id="content-SIX">Image Dimensions</h3>
+        <p>CSS allows you to control image dimensions with properties like <code>width</code> and <code>height</code>.</p>
+    
+        <pre><code>
+            /* Image dimensions example */
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </code></pre>
+        
+        <hr>
+    
+        <h2 id="content-">Adding CSS to HTML</h2>
+        <p>CSS can be added to HTML through external, internal, and inline methods. In this example, we’re using internal CSS.</p>
+    
+        <h3>External CSS</h3>
+        <p>External CSS is the most common method, where you link a separate CSS file within the <code>&lt;head&gt;</code> section of your HTML.</p>
+    
+        <pre><code>
+            <!-- Linking an external CSS file -->
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        </code></pre>
+        
+        <hr>
+    
+        <h3>Internal CSS</h3>
+        <p>Internal CSS is applied within the <code>&lt;style&gt;</code> element in the HTML <code>&lt;head&gt;</code> section, as shown in this document.</p>
+        
+        <hr>
+    
+        <h3>Inline CSS</h3>
+        <p>Inline CSS applies styles directly to HTML elements using the <code>style</code> attribute.</p>
+    
+        <pre><code>
+            &lt;p style="color: red; font-size: 18px;"&gt;This text is red and larger!&lt;/p&gt;
+        </code></pre>
+        
+        <hr>
+    
+        <h2>Conclusion</h2>
+        <p>By mastering these CSS basics, you will be able to create visually stunning web pages that are engaging and user-friendly. Experiment with different properties and selectors to enhance your designs!</p>
+    
+    
+
+        <!-- Next Lesson Button -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/css-topics/lesson_2.html" class="next-lesson-button">Next</a>
+        </div>
+    </main>
+</body>
+</html>

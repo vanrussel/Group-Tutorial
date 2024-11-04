@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Smash</title>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css">
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          background-color: #f9f9f9;
+          color: #333;
+      }
+      p {
+          margin: 10px 0;
+      }
+      code {
+          background-color: #f4f4f4;
+          padding: 2px 4px;
+          border-radius: 4px;
+      }
+      pre {
+          background-color: #eaeaea;
+          padding: 10px;
+          border-left: 4px solid #2980b9;
+      }
+      hr {
+          margin: 20px 0;
+          border: 0;
+          border-top: 1px solid #ccc;
+      }
+  </style>
+
+</head>
+<body>
+    <nav>
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
+        </a>
+        <h2 style="text-transform: uppercase;">team smash / <span style="font-weight: 400;">css tutorial</span></h2>
+
+    </nav>
+    <aside> 
+        <h3>Lesson Contents</h3>
+        <a href="#content-ONE">Introduction</a>
+        <a href="#content-TWO">Lesson Overview</a>
+        <a href="#content-THREE">Block Elements</a>
+        <a href="#content-FOUR">Inline Elements</a>
+        <a href="#content-FIVE">Differences Between Block and Inline Elements</a>
+        <a href="#content-SIX">Examples and Use Cases</a>
+        <a href="#content-SEVEN">Conclusion</a>
+    </aside>
+
+    <main>
+        <h2 >Lesson 6: Block & Inline</h2>
+        <h1 id="content-ONE">Introduction</h1>
+        <p>CSS (Cascading Style Sheets) is essential for controlling the layout of HTML elements on a webpage. One of the key concepts in CSS is understanding the difference between block and inline elements. This distinction affects how elements are displayed, how they interact with each other, and how they contribute to the overall layout of a webpage.</p>
+    
+        <hr>
+    
+        <h2 id="content-TWO">Lesson Overview</h2>
+        <p>This lesson will cover the following topics:</p>
+        <ul>
+            <li>Definition of Block and Inline elements.</li>
+            <li>Characteristics of Block elements.</li>
+            <li>Characteristics of Inline elements.</li>
+            <li>Differences between Block and Inline elements.</li>
+            <li>Examples and use cases.</li>
+        </ul>
+    
+        <hr>
+    
+        <h2 id="content-THREE">Block Elements</h2>
+        <p>Block elements are HTML elements that occupy the full width available, with a new line before and after them. They create a "block" of space on the page and are typically used for larger sections of content. Common block elements include:</p>
+        <ul>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;h1&gt; to &lt;h6&gt;</code></li>
+            <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+            <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></li>
+        </ul>
+        <p>Characteristics of block elements include:</p>
+        <ul>
+            <li>Always start on a new line.</li>
+            <li>Take up the full width of their parent container by default.</li>
+            <li>Can have width and height set via CSS.</li>
+        </ul>
+        Example:
+        <pre><code>div {
+        width: 100%; /* Takes full width */
+        background-color: lightblue;
+        padding: 10px;
+    }</code></pre>
+    
+        <hr>
+    
+        <h2 id="content-FOUR">Inline Elements</h2>
+        <p>Inline elements, on the other hand, only take up as much width as necessary, and they do not start on a new line. They are typically used for smaller parts of content within a block element. Common inline elements include:</p>
+        <ul>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+        </ul>
+        <p>Characteristics of inline elements include:</p>
+        <ul>
+            <li>Do not start on a new line.</li>
+            <li>Only take up as much width as necessary.</li>
+            <li>Cannot have width and height set via CSS (though padding and margins can be applied). </li>
+        </ul>
+        Example:
+        <pre><code>span {
+        color: blue; /* Changes text color */
+        padding: 5px;
+    }</code></pre>
+    
+        <hr>
+    
+        <h2 id="content-FIVE">Differences Between Block and Inline Elements</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Block Elements</th>
+                    <th>Inline Elements</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Display Style</td>
+                    <td>Starts on a new line</td>
+                    <td>Does not start on a new line</td>
+                </tr>
+                <tr>
+                    <td>Width</td>
+                    <td>Takes full width of parent</td>
+                    <td>Takes only necessary width</td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td>Can set width and height</td>
+                    <td>Cannot set width and height</td>
+                </tr>
+                <tr>
+                    <td>Common Elements</td>
+                    <td><code>div</code>, <code>p</code>, <code>h1-h6</code></td>
+                    <td><code>span</code>, <code>a</code>, <code>img</code></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <hr>
+    
+        <h2 id="content-SIX">Examples and Use Cases</h2>
+        <p>Understanding when to use block and inline elements is crucial for proper layout and styling:</p>
+        <ul>
+            <li>Use block elements to structure the main sections of your webpage (e.g., headers, footers, and main content areas).</li>
+            <li>Use inline elements to style smaller pieces of content within block elements (e.g., emphasizing text or adding links).</li>
+            <li>Sometimes, you may need to change the display property of an element using CSS. For example, you can set a block element to display inline using <code>display: inline;</code> or vice versa with <code>display: block;</code>.</li>
+        </ul>
+        Example of changing display:
+        <pre><code>div {
+        display: inline; /* Changes block to inline */
+    }</code></pre>
+    
+        <hr>
+    
+        <h2 id="content-SEVEN">Conclusion</h2>
+        <p>Understanding the difference between block and inline elements is fundamental in CSS. By mastering this concept, you can create well-structured and visually appealing web pages, ensuring that your content is displayed as intended.</p>
+    </body>
+    
+    
+
+          <!-- Next Lesson Button -->
+          <div style="text-align: center; margin-top: 20px;">
+            <a href="/css-topics/lesson_5.html" class="lesson-button">Previous</a>
+            <a href="/index.html" class="next-lesson-button">Finish</a>
+        </div>
+    </main>
+</body>
+</html>
