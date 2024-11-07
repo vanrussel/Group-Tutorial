@@ -38,12 +38,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #18b8c0;
+  background-color: #00adb5;
   transition: ease-in-out 0.1s;
 }
 
 nav a:active {
-  background-color: #00000041;
+  background-color: #0098a0;
 }
 
 nav svg {
@@ -125,8 +125,13 @@ aside a:link {
 }
 
 aside a:hover {
-  color: white;
   background-color: #00adb5;
+  transition: ease-in-out 0.1s;
+}
+
+aside a:active {
+  background-color: #0098a0;
+  transition: ease-in-out 0.1s;
 }
 
 .active {

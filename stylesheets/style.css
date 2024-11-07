@@ -45,8 +45,12 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
-  background-color: #3cc8d0;
+  background-color: #00adb5;
+  transition: ease-in 0.1s;
+}
+
+nav a:active {
+  background-color: #0098a0;
   transition: ease-in 0.1s;
 }
 
