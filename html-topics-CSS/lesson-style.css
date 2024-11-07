@@ -1,176 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --dark-black: #222831;
-    --light-black: #393E46;
-    --accent-color: #00ADB5;
-    --white: #EEEEEE;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #222831;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #222831;
 }
 
 body {
-    background-color: #EEEEEE;
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    grid-template-columns: 16rem 1fr;
-    grid-template-rows: 4rem 1fr;    
-    grid-template-areas:"navbar navbar"
-                        "sidebar main";
+  background-color: #eeeeee;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 16rem 1fr;
+  grid-template-rows: 4rem 1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "sidebar main";
 }
 
 nav {
-    background-color: aliceblue;
-    grid-area: navbar;
-    display: flex;
-    align-items: center;
-    padding: 0 1em;
-    gap: 2em;
+  background-color: aliceblue;
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  gap: 2em;
 }
 
 nav a {
-    display: flex;
-    align-items: center;
-    padding: .5em;
-    border: none;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border: none;
+  border-radius: 50%;
 }
 
 nav a:hover {
-    background-color: #3498DB;
-    transition: ease-in-out 0.1s;
+  background-color: #3498db;
+  transition: ease-in-out 0.1s;
 }
 
 nav a:active {
-    background-color: #00000041;
+  background-color: #00000041;
 }
 
 nav svg {
-    fill: #4B4453;
+  fill: #4b4453;
 }
 
 main {
-    background-color: #EEEEEE;
-    grid-area: main;
-    font-size: 1.25rem;
-    padding: 3em;
-    overflow-y: auto;
+  background-color: #eeeeee;
+  grid-area: main;
+  font-size: 1.25rem;
+  padding: 3em;
+  overflow-y: auto;
 }
 
 main::-webkit-scrollbar {
-    width: .7rem;
-    height: .7rem;    
+  width: 0.7rem;
+  height: 0.7rem;
 }
 
 main::-webkit-scrollbar-track {
-    background: #dddddd;
+  background: #dddddd;
 }
 
 main::-webkit-scrollbar-thumb {
-    background: #393E46;
+  background: #393e46;
 }
 
 main h2 {
-    font-size: 3rem;
-    margin-bottom: 1em;
+  font-size: 3rem;
+  margin-bottom: 1em;
 }
 
 hr {
-    height: 1px;
-    background-color: #4B4453;
-    margin: 3em -1.25em;
-    border: none;
+  height: 1px;
+  background-color: #4b4453;
+  margin: 3em -1.25em;
+  border: none;
 }
 
 main p {
-    text-align: justify;
+  text-align: justify;
 }
 
 aside {
-    background-color: #222831;
-    grid-area: sidebar;
-    overflow-y: auto;
-    padding-bottom: 4rem;
+  background-color: #222831;
+  grid-area: sidebar;
+  overflow-y: auto;
+  padding-bottom: 4rem;
 }
 
 aside::-webkit-scrollbar {
-    width: .7rem;
-    height: .7rem;
+  width: 0.7rem;
+  height: 0.7rem;
 }
 
 aside::-webkit-scrollbar-track {
-    background: #393E46;
+  background: #393e46;
 }
 
 aside::-webkit-scrollbar-thumb {
-    background: #b6bebe;
+  background: #b6bebe;
 }
 
 aside h3 {
-    margin: 1rem;
-    font-size: 1.5rem;
-    color: #EEEEEE;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #eeeeee;
 }
 
 aside a {
-    color: #EEEEEE;
+  color: #eeeeee;
 }
 
-aside a:link{
-    display: flex;
-    font-size: 1rem;
-    padding: 1em;
-    width: 1em - .5em;
+aside a:link {
+  display: flex;
+  font-size: 1rem;
+  padding: 1em;
+  width: 1em - 0.5em;
 }
 
 aside a:hover {
-    color: white;    
-    background-color: #00ADB5;
+  color: white;
+  background-color: #00adb5;
+}
+
+.active {
+  background-color: #00adb5;
 }
 
 .list {
-    margin: 10px;
-    margin-left: 20px;
-}
-
-.next-lesson-button {
-    margin-top: 50px;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #222831;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.next-lesson-button:hover {
-    background-color: #00ADB5;
-}
-
-.lesson-navigation {
-    text-align: center;
-    margin-top: 20px;
-}
-.lesson-button {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #222831;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-.lesson-button:hover {
-    background-color: #00ADB5;
+  margin: 10px;
+  margin-left: 20px;
 }

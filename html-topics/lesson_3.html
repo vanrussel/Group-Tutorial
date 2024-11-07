@@ -1,122 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Smash</title>
-    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
+  </head>
+  <body>
     <nav>
-        <a href="../index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
-        </a>
-        <h2 style="text-transform: uppercase;">team smash / <span style="font-weight: 400;">css tutorial</span></h2>
-
+      <a href="../index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+          />
+        </svg>
+      </a>
+      <h2 style="text-transform: uppercase">
+        team smash / <span style="font-weight: 400">css tutorial</span>
+      </h2>
     </nav>
-    <aside> 
-        <h3>Lesson Contents</h3>
-        <a href="#content-ONE">Introduction</a>
-        <a href="#content-TWO">Lesson Overview</a>
-        <a href="lesson.html">What is an HTML Boilerplate?</a>
-        <a href="lesson.html">Why Use an HTML Boilerplate?</a>
-        <a href="lesson.html">Components of HTML Boilerplate</a>
-        <a href="lesson.html">Essential Parts of HTML Boilerplate</a>
-        <a href="lesson.html">Doctype Declaration</a>
-        <a href="lesson.html">HTML Tag and Language Attribute</a>
-        <a href="lesson.html">Head Section</a>
-        <a href="lesson.html">Body Section</a>
-        <a href="lesson.html">Setting Up an HTML Boilerplate</a>
-        <a href="lesson.html">Conclusion</a>
+    <aside>
+      <h3>HTML</h3>
+      <a href="lesson_1.html">Intro to HTML</a>
+      <a href="lesson_2.html">Elements & Tags</a>
+      <a class="active" href="lesson_3.html">HTML boilerplate</a>
+      <a href="lesson_4.html">Headings & List</a>
+      <a href="lesson_5.html">Links & Images</a>
+      <a href="lesson_6.html">Tables & Form</a>
     </aside>
 
     <main>
-        <h2>Lesson 3: HTML Boilerplate</h2>
+      <h2>Lesson 3: HTML Boilerplate</h2>
 
-        <h2 id="content-ONE">Introduction</h2>
+      <h2 id="content-ONE">Introduction</h2>
+      <p>
+        An HTML boilerplate is a template that provides a basic structure for
+        HTML documents. It includes the essential elements and meta tags that
+        every HTML document should have to ensure proper rendering and
+        functionality across different browsers.
+      </p>
+
+      <div class="two__container">
+        <hr />
+        <h2 id="content-TWO">Lesson overview</h2>
         <p>
-            An HTML boilerplate is a template that provides a basic structure for HTML documents. It includes the essential elements and meta tags that every HTML document should have to ensure proper rendering and functionality across different browsers.
+          This section contains a general overview of topics that you will learn
+          in this lesson.
         </p>
 
-        <div class="two__container">
-            <hr>
-            <h2 id="content-TWO">Lesson overview</h2>
-            <p>
-                This section contains a general overview of topics that you will learn in this lesson.
-            </p>
-
-            <div class="list">
-                <ul>
-                    <li>  Get a basic overview of HTML and how it work.</li>
-                </ul>
-            </div>
+        <div class="list">
+          <ul>
+            <li>Get a basic overview of HTML and how it work.</li>
+          </ul>
         </div>
+      </div>
 
-        <hr>
-        <div class="part">
-            <h2>What is an HTML Boilerplate?</h2>
-            <p>An HTML boilerplate is a set of pre-written HTML, CSS, and JavaScript files that form the starting point for your web project. It includes essential elements like the doctype declaration, meta tags, link to CSS files, and script tags for JavaScript. The primary goal is to save time and ensure consistency by providing a robust template that follows industry standards.</p>
-        </div>
+      <hr />
+      <div class="part">
+        <h2>What is an HTML Boilerplate?</h2>
+        <p>
+          An HTML boilerplate is a set of pre-written HTML, CSS, and JavaScript
+          files that form the starting point for your web project. It includes
+          essential elements like the doctype declaration, meta tags, link to
+          CSS files, and script tags for JavaScript. The primary goal is to save
+          time and ensure consistency by providing a robust template that
+          follows industry standards.
+        </p>
+      </div>
 
-        <hr>
-        <div class="part">
-            <h2>Why Use an HTML Boilerplate?</h2>
-            <p>Using an HTML boilerplate has several benefits:
-    
-                <li>Efficiency: Quickly set up new projects without rewriting the same basic structure each time.</li>
-                
-                <li>Consistency: Maintain a consistent structure and style across multiple projects.</li>
-                
-                <li>Best Practices: Follow industry standards and best practices out of the box.</li>
-                
-                <li>Cross-browser Compatibility: Ensure your site works well across different browsers and devices.</li>
-            </p>
-        </div>
+      <hr />
+      <div class="part">
+        <h2>Why Use an HTML Boilerplate?</h2>
+        <p>
+          Using an HTML boilerplate has several benefits:
 
-        <hr>
-        <div class="part">
-            <h2>Components of HTML Boilerplate</h2>
-            <p>An HTML Boilerplate typically includes the following components:
-    
-                <li>HTML: The fundamental markup language used to structure the content of a website.</li>
-                <li>CSS: The language used for styling and layout of a website, enhancing the visual presentation. This is optional but commonly included.</li>
-                <li>JavaScript: A programming language for adding interactivity and dynamic functionality to a website. This is also optional but widely used.</li></p>
-        </div>
-    
-        <hr>
-        <div class="part">
-            <h2>Essential Parts of HTML Boilerplate</h2>
-            <h3>Table of Content</h3>
-            <p> <li>Doctype Declaration</li>
-                <li>HTML Tag and Language Attribute</li>
-                <li>Head Section</li>
-                <li>Body Section</li></p>
-        </div>
+          <li>
+            Efficiency: Quickly set up new projects without rewriting the same
+            basic structure each time.
+          </li>
 
-        <hr>
-        <div class="part">
-            <h2>Doctype Declaration</h2>
-            <p>The doctype declaration is crucial as it tells the browser which version of HTML you are using. The most common doctype for modern web development is HTML5:</p>
-            <div class="code-box">
-                <code>&lt;!DOCTYPE html&gt;</code>
-            </div>
-        </div>
+          <li>
+            Consistency: Maintain a consistent structure and style across
+            multiple projects.
+          </li>
 
-        <hr>
-        <div class="part">
-            <h2>HTML Tag and Language Attribute</h2>
-            <p>The &lt;html&gt; tag is the root element of an HTML document. Including the lang attribute specifies the language of the content, which is important for accessibility and SEO:</p>
-            <div class="code-box">
-                <code>&lt;html lang="en"&gt;</code>
-            </div>
-        </div>
+          <li>
+            Best Practices: Follow industry standards and best practices out of
+            the box.
+          </li>
 
-        <hr>
-        <div class="part">
-            <h2>Head Section</h2>
-            <p>The &lt;head&gt; section contains meta-information about the document, such as the character set, viewport settings, and links to CSS files:</p>
-            <div class="code-box">
-                <code><pre>
+          <li>
+            Cross-browser Compatibility: Ensure your site works well across
+            different browsers and devices.
+          </li>
+        </p>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Components of HTML Boilerplate</h2>
+        <p>
+          An HTML Boilerplate typically includes the following components:
+
+          <li>
+            HTML: The fundamental markup language used to structure the content
+            of a website.
+          </li>
+          <li>
+            CSS: The language used for styling and layout of a website,
+            enhancing the visual presentation. This is optional but commonly
+            included.
+          </li>
+          <li>
+            JavaScript: A programming language for adding interactivity and
+            dynamic functionality to a website. This is also optional but widely
+            used.
+          </li>
+        </p>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Essential Parts of HTML Boilerplate</h2>
+        <h3>Table of Content</h3>
+        <p>
+          <li>Doctype Declaration</li>
+          <li>HTML Tag and Language Attribute</li>
+          <li>Head Section</li>
+          <li>Body Section</li>
+        </p>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Doctype Declaration</h2>
+        <p>
+          The doctype declaration is crucial as it tells the browser which
+          version of HTML you are using. The most common doctype for modern web
+          development is HTML5:
+        </p>
+        <div class="code-box">
+          <code>&lt;!DOCTYPE html&gt;</code>
+        </div>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>HTML Tag and Language Attribute</h2>
+        <p>
+          The &lt;html&gt; tag is the root element of an HTML document.
+          Including the lang attribute specifies the language of the content,
+          which is important for accessibility and SEO:
+        </p>
+        <div class="code-box">
+          <code>&lt;html lang="en"&gt;</code>
+        </div>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Head Section</h2>
+        <p>
+          The &lt;head&gt; section contains meta-information about the document,
+          such as the character set, viewport settings, and links to CSS files:
+        </p>
+        <div class="code-box">
+          <code>
+            <pre>
                     &lt;head&gt;
                       &lt;meta charset="UTF-8"&gt;
                       &lt;meta name="viewport" content="width=device-width,
@@ -124,16 +180,22 @@
                       &lt;title>My Project&lt;/title&gt;
                       &lt;link rel="stylesheet" href="styles.css"&gt;
                     &lt;/head&gt; 
-                </pre></code>
-            </div>
+                </pre
+            >
+          </code>
         </div>
-    
-        <hr>
-        <div class="part">
-            <h2>Body Section</h2>
-            <p>The &lt;body&gt; section contains the content of your website. This is where you’ll place your HTML elements that will be visible to users:</p>
-            <div class="code-box">
-                <code><pre>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Body Section</h2>
+        <p>
+          The &lt;body&gt; section contains the content of your website. This is
+          where you’ll place your HTML elements that will be visible to users:
+        </p>
+        <div class="code-box">
+          <code>
+            <pre>
                     &lt;body&gt;
                         &lt;header&gt;
                          &lt;h1&gt;Welcome to GeeksforGeeks&lt;/h1&gt;
@@ -146,16 +208,22 @@
                      &lt;/footer&gt;
                      &lt;script src="scripts.js"&gt;&lt;/script&gt;
                     &lt;/body&gt;
-                </pre></code>
-            </div>
+                </pre
+            >
+          </code>
         </div>
-    
-        <hr>
-        <div class="part">
-            <h2>Setting Up an HTML Boilerplate</h2>
-            <p><b>Example:</b> Now that we understand the essential elements, let’s set up a basic HTML boilerplate.</p>
-            <div class="code-box">
-                <code><pre>
+      </div>
+
+      <hr />
+      <div class="part">
+        <h2>Setting Up an HTML Boilerplate</h2>
+        <p>
+          <b>Example:</b> Now that we understand the essential elements, let’s
+          set up a basic HTML boilerplate.
+        </p>
+        <div class="code-box">
+          <code>
+            <pre>
                     &lt;!DOCTYPE html&gt;
                     &lt;html lang="en"&gt;
                     
@@ -188,28 +256,44 @@
                     &lt;/body&gt;
                 
                     &lt;/html&gt;
-                    </pre></code>
-            </div>
-            <h3>Output:</h3>
-            <pre>
+                    </pre
+            >
+          </code>
+        </div>
+        <h3>Output:</h3>
+        <pre>
                 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240521171730/Screenshot-2024-05-21-171713.png"> </pre>
-        </div>
-    
-        <hr>
-        <div class="part">
-            <h2>Conclusion</h2>
-            <p>An HTML boilerplate is an essential tool for any web developer. It provides a standardized foundation that ensures your projects are built on best practices and are compatible across different browsers. By using a boilerplate, you save time, maintain consistency, and ensure a professional starting point for all your web development projects. So, next time you start a new project, remember to set up your HTML boilerplate and start coding with confidence!
-    
-                Want to be a Software Developer or a Working Professional looking to enhance your Software Development Skills? Then, master the concepts of Full-Stack Development. Our Full Stack Development - React and Node.js Course will help you achieve this quickly. Learn everything from Front-End to Back-End Development with hands-on Projects and real-world examples. This course enables you to build scalable, efficient, dynamic web applications that stand out. Ready to become an expert in Full-Stack? Enroll Now and Start Creating the Future!</p>
-        <br>
-        <br>
-        </div>
+      </div>
 
-         <!-- Next Lesson Button -->
-         <div style="text-align: center; margin-top: 20px;">
-            <a href="/html-topics/lesson_2.html" class="lesson-button">Previous</a>
-            <a href="/html-topics/lesson_4.html" class="next-lesson-button">Next</a>
-        </div>
+      <hr />
+      <div class="part">
+        <h2>Conclusion</h2>
+        <p>
+          An HTML boilerplate is an essential tool for any web developer. It
+          provides a standardized foundation that ensures your projects are
+          built on best practices and are compatible across different browsers.
+          By using a boilerplate, you save time, maintain consistency, and
+          ensure a professional starting point for all your web development
+          projects. So, next time you start a new project, remember to set up
+          your HTML boilerplate and start coding with confidence! Want to be a
+          Software Developer or a Working Professional looking to enhance your
+          Software Development Skills? Then, master the concepts of Full-Stack
+          Development. Our Full Stack Development - React and Node.js Course
+          will help you achieve this quickly. Learn everything from Front-End to
+          Back-End Development with hands-on Projects and real-world examples.
+          This course enables you to build scalable, efficient, dynamic web
+          applications that stand out. Ready to become an expert in Full-Stack?
+          Enroll Now and Start Creating the Future!
+        </p>
+        <br />
+        <br />
+      </div>
+
+      <!-- Next Lesson Button -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/html-topics/lesson_2.html" class="lesson-button">Previous</a>
+        <a href="/html-topics/lesson_4.html" class="next-lesson-button">Next</a>
+      </div>
     </main>
-</body>
+  </body>
 </html>
