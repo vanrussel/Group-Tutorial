@@ -61,6 +61,14 @@ main {
   min-height: 100vh;
 }
 
+#Introduction {
+  width: 50%;
+  height: 100vh;
+  font-size: 2rem;
+  text-align: start;
+  align-content: center;
+}
+
 #groupName {
   width: 100%;
   height: 100vh;

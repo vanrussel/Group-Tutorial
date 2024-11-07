@@ -126,12 +126,10 @@ aside a:link {
 
 aside a:hover {
   background-color: #00adb5;
-  transition: ease-in-out 0.1s;
 }
 
 aside a:active {
   background-color: #0098a0;
-  transition: ease-in-out 0.1s;
 }
 
 .active {
