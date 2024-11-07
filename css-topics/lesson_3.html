@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Smash</title>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+          />
+        </svg>
+      </a>
+      <h2 style="text-transform: uppercase">
+        team smash / <span style="font-weight: 400">css tutorial</span>
+      </h2>
+    </nav>
+    <aside>
+      <h3>CSS</h3>
+      <a href="lesson_1.html">1. Intro to Css</a>
+      <a href="lesson_2.html">2. The Cascade</a>
+      <a class="active" href="lesson_3.html">3. Basic CSS Selectors</a>
+      <a href="lesson_4.html">4. The Box Model</a>
+      <a href="lesson_5.html">5. Colors</a>
+      <a href="lesson_6.html">6. Block & Inline</a>
+    </aside>
+
+    <main>
+      <h2>Lesson 3: Basic CSS Selectors</h2>
+      <h1 id="content-ONE">Introduction to CSS</h1>
+      <p>
+        Previously, you learned how HTML structures a web page. Now, let’s make
+        it look appealing with CSS.
+      </p>
+
+      <hr />
+
+      <h2 id="content-TWO">Lesson Overview</h2>
+      <p>
+        This lesson covers essential topics that will equip you with the skills
+        to style your web pages effectively.
+      </p>
+
+      <hr />
+
+      <h2 id="content-THREE">Selectors</h2>
+      <p>
+        Selectors are fundamental in CSS as they determine which HTML elements
+        the styles apply to.
+      </p>
+
+      <h3 id="content-FOUR">Universal Selector</h3>
+      <p>
+        This selector applies to all elements of any type, useful for applying a
+        general style across your webpage.
+      </p>
+
+      <pre><code>
+            /* Universal selector example */
+            * {
+                font-family: Arial, sans-serif;
+                color: black;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-FIVE">Type Selectors</h3>
+      <p>
+        Type selectors target all instances of a specified HTML element based on
+        their tag names.
+      </p>
+
+      <pre><code>
+            /* Type selector example */
+            h1 {
+                font-size: 32px;
+                color: darkblue;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-SIX">Class Selectors</h3>
+      <p>
+        Class selectors are used to apply styles to multiple elements that share
+        the same class attribute.
+      </p>
+
+      <div class="highlight">
+        This is a highlighted paragraph using a class selector.
+      </div>
+      <pre><code>
+            /* Class selector example */
+            .highlight {
+                background-color: yellow;
+                font-weight: bold;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-SEVEN">ID Selectors</h3>
+      <p>ID selectors target specific elements by their unique ID attribute.</p>
+
+      <div id="main-title">Welcome to My Website!</div>
+      <pre><code>
+            /* ID selector example */
+            #main-title {
+                font-size: 36px;
+                color: green;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-EIGHT">Grouping Selector</h3>
+      <p>
+        The grouping selector allows you to apply the same styles to multiple
+        selectors at once.
+      </p>
+
+      <pre><code>
+            /* Grouping selector example */
+            h2, h3 {
+                color: gray;
+                margin-bottom: 10px;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-NINE">Chaining Selectors</h3>
+      <p>
+        Chaining selectors allows you to combine multiple selectors to apply
+        styles only to elements that match all specified criteria.
+      </p>
+
+      <div class="box active">This is an active box.</div>
+      <pre><code>
+            /* Chaining selector example */
+            .box.active {
+                border: 2px solid red;
+            }
+        </code></pre>
+
+      <hr />
+
+      <h3 id="content-TEN">Descendant Combinator</h3>
+      <p>
+        Combinators allow you to define relationships between selectors. The
+        descendant combinator selects elements nested within another specified
+        element.
+      </p>
+
+      <div class="container">
+        <div class="inner">
+          <p>This is a nested paragraph.</p>
+        </div>
+      </div>
+      <pre><code>
+            /* Descendant combinator example */
+            .container .inner p {
+                color: blue;
+            }
+        </code></pre>
+
+      <!-- Next Lesson Button -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/css-topics/lesson_2.html" class="lesson-button">Previous</a>
+        <a href="/css-topics/lesson_4.html" class="next-lesson-button">Next</a>
+      </div>
+    </main>
+  </body>
+</html>

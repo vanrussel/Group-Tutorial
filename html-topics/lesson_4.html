@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Smash</title>
+    <title>HTML Headings and Lists</title>
     <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <a href="../index.html">
         <svg
@@ -14,131 +15,154 @@
           height="32px"
           viewBox="0 -960 960 960"
           width="32px"
-          fill="#e8eaed"
         >
           <path
             d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
           />
         </svg>
       </a>
-      <h2 style="text-transform: uppercase">
-        team smash / <span style="font-weight: 400">css tutorial</span>
-      </h2>
+      <h2>HTML Tutorial - Headings and Lists</h2>
     </nav>
+
+    <!-- Sidebar -->
     <aside>
       <h3>HTML</h3>
-      <a href="lesson_1.html">Intro to HTML</a>
-      <a href="lesson_2.html">Elements & Tags</a>
-      <a href="lesson_3.html">HTML boilerplate</a>
-      <a class="active" href="lesson_4.html">Headings & List</a>
-      <a href="lesson_5.html">Links & Images</a>
-      <a href="lesson_6.html">Tables & Form</a>
+      <a href="lesson_1.html">1. Intro to HTML</a>
+      <a href="lesson_2.html">2. Elements & Tags</a>
+      <a href="lesson_3.html">3. HTML boilerplate</a>
+      <a class="active" href="lesson_4.html">4. Headings & List</a>
+      <a href="lesson_5.html">5. Links</a>
+      <a href="lesson_6.html">6. Images</a>
     </aside>
 
+    <!-- Main Content -->
     <main>
+      <!-- Introduction Section -->
       <h2 id="content-ONE">Introduction</h2>
-      <p>HTML is the standard markup language for creating Web pages.</p>
+      <p>
+        This lesson introduces HTML structure through headings and lists, which
+        are key to organizing web content.
+      </p>
+      <hr />
+
+      <!-- Lesson Overview -->
+      <h2 id="content-TWO">Lesson Overview</h2>
+      <p>
+        This section contains an overview of headings, lists, and web
+        technologies, showing how to use HTML to build organized content.
+      </p>
+      <hr />
+
+      <!-- Headings Section -->
+      <h2 id="content-THREE">Headings</h2>
+      <p>
+        HTML headings (h1 to h6) are used to structure content. Headings help
+        organize information hierarchically, making it easier for users to read
+        and navigate. The largest heading is h1, often used for main titles, and
+        h6 is the smallest.
+      </p>
       <br />
-      <h3>What is HTML?</h3>
+      <div class="heading-example">
+        <h1>Heading Level 1 (h1)</h1>
+        <h2>Heading Level 2 (h2)</h2>
+        <h3>Heading Level 3 (h3)</h3>
+        <h4>Heading Level 4 (h4)</h4>
+        <h5>Heading Level 5 (h5)</h5>
+        <h6>Heading Level 6 (h6)</h6>
+      </div>
+      <br />
+      <p>
+        Using these heading levels consistently improves accessibility and SEO,
+        as search engines prioritize content based on this hierarchy.
+      </p>
+      <hr />
+
+      <!-- Lists Section -->
+      <br />
+      <h2 id="content-FOUR">Lists</h2>
+      <p>
+        Lists in HTML are used to organize items or ideas in a structured way.
+        HTML provides three types of lists: unordered, ordered, and description
+        lists.
+      </p>
+
+      <!-- Unordered List -->
+      <br />
+      <h3>Unordered List Example</h3>
+      <div class="list">
+        <ul>
+          <li>Apples</li>
+          <li>Oranges</li>
+          <li>Bananas</li>
+        </ul>
+      </div>
+
+      <!-- Ordered List -->
+      <br />
+      <h3>Ordered List Example</h3>
+      <div class="list">
+        <ol>
+          <li>Step 1: Gather materials</li>
+          <li>Step 2: Prepare workspace</li>
+          <li>Step 3: Start the project</li>
+        </ol>
+      </div>
+
+      <!-- Description List -->
+      <br />
+      <h3>Description List Example</h3>
+      <div class="list">
+        <dl>
+          <dt>HTML</dt>
+          <dd>The standard markup language for web pages.</dd>
+          <dt>CSS</dt>
+          <dd>Used to style and layout web pages.</dd>
+        </dl>
+      </div>
+      <hr />
+
+      <!-- Web Technologies Section -->
+      <h2 id="content-FIVE">Web Technologies</h2>
+      <p>
+        In addition to headings and lists, understanding web technologies like
+        HTML, CSS, and JavaScript is essential for web development.
+      </p>
+
+      <!-- Languages List -->
+      <br />
+      <h3>Languages</h3>
       <ul>
-        <li>HTML stands for Hyper Text Markup Language</li>
-        <li>HTML describes the structure of Web pages using markup</li>
-        <li>HTML elements are the building blocks of HTML pages</li>
-        <li>HTML elements are represented by tags</li>
-        <li>
-          HTML tags label pieces of content such as "heading", "paragraph",
-          "table", and so on
-        </li>
-        <li>
-          Browsers do not display the HTML tags, but use them to render the
-          content of the page
-        </li>
+        <li>HTML - For creating the structure of web pages</li>
+        <li>CSS - For styling and layout</li>
+        <li>JavaScript - For adding interactivity</li>
       </ul>
 
-      <hr />
-      <h2 id="content-TWO">Lesson overview</h2>
-      <p>
-        This section contains a general overview of topics that you will learn
-        in this lesson.
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
+      <!-- Frameworks List -->
+      <br />
+      <h3>Popular Frameworks</h3>
+      <ol>
+        <li>React - A JavaScript library for building user interfaces</li>
+        <li>
+          Angular - A TypeScript-based platform for building web applications
+        </li>
+        <li>Vue - A progressive JavaScript framework for UI development</li>
+      </ol>
+
+      <!-- Description of Key Terms -->
+      <br />
+      <h3>Key Terms</h3>
+      <dl>
+        <dt>Frontend</dt>
+        <dd>The part of the website that users interact with directly.</dd>
+        <dt>Backend</dt>
+        <dd>The server-side logic that powers frontend functionality.</dd>
+      </dl>
+
+      <!-- Navigation to Other Lessons -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/html-topics/lesson_3.html" class="lesson-button">Previous</a>
+        <a href="/html-topics/lesson_5.html" class="next-lesson-button">Next</a>
+      </div>
     </main>
   </body>
 </html>

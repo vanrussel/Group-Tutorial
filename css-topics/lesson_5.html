@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Smash</title>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      p {
+        margin: 10px 0;
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      pre {
+        background-color: #eaeaea;
+        padding: 10px;
+        border-left: 4px solid #2980b9;
+      }
+      hr {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+          />
+        </svg>
+      </a>
+      <h2 style="text-transform: uppercase">
+        team smash / <span style="font-weight: 400">css tutorial</span>
+      </h2>
+    </nav>
+    <aside>
+      <h3>CSS</h3>
+      <a href="lesson_1.html">1. Intro to Css</a>
+      <a href="lesson_2.html">2. The Cascade</a>
+      <a href="lesson_3.html">3. Basic CSS Selectors</a>
+      <a href="lesson_4.html">4. The Box Model</a>
+      <a class="active" href="lesson_5.html">5. Colors</a>
+      <a href="lesson_6.html">6. Block & Inline</a>
+    </aside>
+
+    <main>
+      <h2>Lesson 5: Colors</h2>
+      <h1 id="content-ONE">Introduction to Colors in CSS</h1>
+      <p>
+        Colors play a crucial role in web design, as they can influence user
+        experience, convey meaning, and enhance the overall aesthetic of a
+        webpage. In CSS (Cascading Style Sheets), you can use various methods to
+        specify colors for text, backgrounds, borders, and more. Understanding
+        how to effectively utilize these color methods is essential for creating
+        visually appealing and accessible web designs.
+      </p>
+
+      <hr />
+
+      <h2 id="content-TWO">Lesson Overview</h2>
+      <p>This lesson will cover the following topics:</p>
+      <ul>
+        <li>Different methods to specify colors in CSS.</li>
+        <li>Best practices for choosing colors wisely.</li>
+        <li>
+          Understanding the importance of contrast and accessibility in color
+          selection.
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="content-THREE">Color Methods in CSS</h2>
+      <p>CSS provides several ways to define colors, including:</p>
+
+      <ol>
+        <li>
+          <strong>Color Names</strong>: CSS supports a set of predefined color
+          names. Using these names is the simplest way to specify colors, but it
+          limits your options. Common names include:
+          <ul>
+            <li><code>red</code></li>
+            <li><code>blue</code></li>
+            <li><code>green</code></li>
+            <li><code>black</code></li>
+            <li><code>white</code></li>
+          </ul>
+          Example:
+          <pre><code>h1 {
+        color: red; /* Sets the text color to red */
+    }</code></pre>
+        </li>
+
+        <hr />
+
+        <li>
+          <strong>HEX Values</strong>: HEX (hexadecimal) color codes are
+          six-digit representations of colors. They consist of three pairs of
+          digits, where each pair represents the intensity of red, green, and
+          blue (RGB). HEX codes start with a <code>#</code> followed by the six
+          digits. <br />For example, <code>#ff5733</code> represents a shade of
+          orange. Example:
+          <pre><code>p {
+        color: #ff5733; /* Sets the text color to a shade of orange */
+    }</code></pre>
+        </li>
+
+        <hr />
+
+        <li>
+          <strong>RGB Values</strong>: The RGB color model allows you to specify
+          colors by defining the intensity of red, green, and blue. The
+          <code>rgb()</code> function takes three parameters, each ranging from
+          0 to 255. <br />For example, <code>rgb(255, 99, 71)</code> represents
+          a tomato color. Example:
+          <pre><code>div {
+        background-color: rgb(255, 99, 71); /* Sets the background color to tomato */
+    }</code></pre>
+        </li>
+
+        <hr />
+
+        <li>
+          <strong>RGBA Values</strong>: Similar to RGB, RGBA (Red, Green, Blue,
+          Alpha) includes an additional parameter for opacity (alpha channel).
+          The alpha value ranges from 0 (fully transparent) to 1 (fully opaque).
+          <br />For example, <code>rgba(255, 99, 71, 0.5)</code> sets a
+          semi-transparent tomato color. Example:
+          <pre><code>span {
+        color: rgba(255, 99, 71, 0.5); /* Sets the text color to semi-transparent tomato */
+    }</code></pre>
+        </li>
+
+        <hr />
+
+        <li>
+          <strong>HSL Values</strong>: HSL (Hue, Saturation, Lightness) is
+          another way to define colors. The <code>hsl()</code> function takes
+          three parameters:
+          <ul>
+            <li><strong>Hue</strong>: A degree on the color wheel (0-360).</li>
+            <li>
+              <strong>Saturation</strong>: A percentage (0% to 100%)
+              representing the intensity of the color.
+            </li>
+            <li>
+              <strong>Lightness</strong>: A percentage (0% is black, 100% is
+              white).
+            </li>
+          </ul>
+          Example:
+          <pre><code>h2 {
+        color: hsl(120, 100%, 50%); /* Sets the text color to a bright green */
+    }</code></pre>
+        </li>
+
+        <hr />
+
+        <li>
+          <strong>HSLA Values</strong>: HSLA adds an alpha channel to HSL,
+          allowing for transparency. Example:
+          <pre><code>h3 {
+        color: hsla(120, 100%, 50%, 0.5); /* Sets a semi-transparent bright green */
+    }</code></pre>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="content-FOUR">Choosing Colors Wisely</h2>
+      <p>When selecting colors for your web design, consider the following:</p>
+      <ul>
+        <li>
+          <strong>Contrast</strong>: Ensure that there is sufficient contrast
+          between text and background colors for readability. Tools like the
+          WebAIM Contrast Checker can help assess color contrast.
+        </li>
+        <li>
+          <strong>Accessibility</strong>: Choose color combinations that are
+          accessible to users with visual impairments. Avoid relying solely on
+          color to convey information.
+        </li>
+        <li>
+          <strong>Consistency</strong>: Use a consistent color palette
+          throughout your website to create a cohesive look and feel.
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="content-FIVE">Conclusion</h2>
+      <p>
+        Understanding and effectively using colors in CSS is vital for web
+        designers. By mastering the various methods to define colors, you can
+        enhance the visual appeal of your websites, improve user experience, and
+        ensure accessibility for all users.
+      </p>
+
+      <!-- Next Lesson Button -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/css-topics/lesson_4.html" class="lesson-button">Previous</a>
+        <a href="/css-topics/lesson_6.html" class="next-lesson-button">Next</a>
+      </div>
+    </main>
+  </body>
+</html>

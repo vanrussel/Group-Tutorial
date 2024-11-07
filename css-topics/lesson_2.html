@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Smash</title>
+    <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+          />
+        </svg>
+      </a>
+      <h2 style="text-transform: uppercase">
+        team smash / <span style="font-weight: 400">css tutorial</span>
+      </h2>
+    </nav>
+    <aside>
+      <h3>CSS</h3>
+      <a href="lesson_1.html">1. Intro to Css</a>
+      <a class="active" href="lesson_2.html">2. The Cascade</a>
+      <a href="lesson_3.html">3. Basic CSS Selectors</a>
+      <a href="lesson_4.html">4. The Box Model</a>
+      <a href="lesson_5.html">5. Colors</a>
+      <a href="lesson_6.html">6. Block & Inline</a>
+    </aside>
+
+    <main>
+      <h2>Lesson 2: The Cascade</h2>
+      <h1 id="content-ONE">Introduction</h1>
+      <p>
+        In the previous lesson, we explored basic CSS syntax and selectors. Now,
+        it’s time to dive into the "C" in CSS — the cascade — and see how it
+        determines which styles are applied when multiple rules come into play.
+      </p>
+
+      <hr />
+
+      <h2 id="content-TWO">Lesson Overview</h2>
+      <p>In this lesson, we’ll cover:</p>
+      <ul>
+        <li>The purpose of the cascade in CSS.</li>
+        <li>Specificity and combining CSS selectors.</li>
+        <li>How inheritance affects certain properties.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="content-THREE">The Cascade in CSS</h2>
+      <p>
+        At times, CSS rules may conflict, leading to unexpected results. For
+        example, you might have expected certain paragraphs to be blue, but they
+        appear red. While this can be frustrating, remember that CSS applies
+        styles based on what we tell it to do — with a few exceptions, like the
+        default styles each browser provides, which can vary.
+      </p>
+      <p>
+        If you’re seeing unexpected behavior, it’s likely due to default styles,
+        misunderstanding a property, or not fully grasping the concept of the
+        cascade.
+      </p>
+      <p>
+        The cascade is what ultimately decides which CSS rules are applied to
+        HTML elements. Several factors influence this, and understanding them
+        can help prevent those “CSS is hard!” moments. Let’s break it down.
+      </p>
+
+      <hr />
+
+      <h2 id="content-FOUR">Specificity</h2>
+      <p>
+        Specificity determines which rule takes priority when multiple styles
+        target the same element. Inline styles have the highest specificity,
+        followed by ID selectors, then class selectors, and finally, type
+        selectors. Here's a quick hierarchy:
+      </p>
+      <ol>
+        <li><strong>ID selectors</strong> (highest specificity)</li>
+        <li><strong>Class selectors</strong></li>
+        <li><strong>Type selectors</strong> (lowest specificity)</li>
+      </ol>
+      <p>
+        Specificity only matters when there are multiple, conflicting
+        declarations. For example, an ID selector will always override any class
+        selector, no matter how many classes are used.
+      </p>
+
+      <h3>Example 1:</h3>
+      <pre>
+          &lt;div class="main"&gt;
+            &lt;div class="list subsection"&gt;Red text&lt;/div&gt;
+          &lt;/div&gt;
+        </pre
+      >
+      <pre>
+          /* rule 1 */
+          .subsection { color: blue; }
+      
+          /* rule 2 */
+          .main .list { color: red; }
+        </pre
+      >
+      <p>
+        In this case, <em>rule 2</em> has higher specificity because it uses
+        more class selectors, so the text color will be red.
+      </p>
+
+      <h3>Example 2:</h3>
+      <pre>
+          &lt;div class="main"&gt;
+            &lt;div class="list" id="subsection"&gt;Blue text&lt;/div&gt;
+          &lt;/div&gt;
+        </pre
+      >
+      <pre>
+          /* rule 1 */
+          #subsection { color: blue; }
+      
+          /* rule 2 */
+          .main .list { color: red; }
+        </pre
+      >
+      <p>
+        Here, despite <em>rule 2</em> having more class selectors,
+        <em>rule 1</em> has an ID selector, which is more specific, so the color
+        will be blue.
+      </p>
+
+      <hr />
+
+      <h2 id="content-FIVE">Not Everything Adds to Specificity</h2>
+      <p>
+        Not all symbols increase specificity. The universal selector
+        (<code>*</code>) and combinators (<code>+</code>, <code>~</code>,
+        <code>&gt;</code>, or spaces) don’t impact specificity.
+      </p>
+
+      <h3>Example:</h3>
+      <pre>
+          /* rule 1 */
+          .class.second-class { font-size: 12px; }
+      
+          /* rule 2 */
+          .class .second-class { font-size: 24px; }
+        </pre
+      >
+      <p>
+        Both rules here have the same specificity since the combinator (space)
+        doesn’t add specificity.
+      </p>
+
+      <hr />
+
+      <h2 id="content-SIX">Inheritance</h2>
+      <p>
+        Some properties, especially those related to typography (like
+        <code>color</code>, <code>font-size</code>, etc.), are inherited by
+        child elements. However, if a child element is directly targeted, that
+        style will override inheritance.
+      </p>
+
+      <h3>Example:</h3>
+      <pre>
+          &lt;div id="parent"&gt;
+            &lt;div class="child"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </pre
+      >
+      <pre>
+          #parent { color: red; }
+          .child { color: blue; }
+        </pre
+      >
+      <p>
+        Although the <code>#parent</code> selector has higher specificity,
+        <code>.child</code> has a direct <code>color: blue</code> declaration,
+        so it takes precedence.
+      </p>
+
+      <hr />
+
+      <h2 id="content-SEVEN">Rule Order</h2>
+      <p>
+        When all else is equal, the last defined rule wins. This final check is
+        the cascade’s ultimate tie-breaker.
+      </p>
+
+      <h3>Example:</h3>
+      <pre>
+          .alert { color: red; }
+          .warning { color: yellow; }
+        </pre
+      >
+      <p>
+        For an element with both <code>alert</code> and
+        <code>warning</code> classes, the <code>.warning</code> color (yellow)
+        will apply because it is defined last.
+      </p>
+
+      <hr />
+
+      <p>
+        Understanding the cascade helps CSS work for you, not against you. By
+        learning how specificity, inheritance, and rule order function, you can
+        apply styles effectively and avoid common pitfalls.
+      </p>
+
+      <!-- Next Lesson Button -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/css-topics/lesson.html" class="lesson-button">Previous</a>
+        <a href="/css-topics/lesson_3.html" class="next-lesson-button">Next</a>
+      </div>
+    </main>
+  </body>
+</html>

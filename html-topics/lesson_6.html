@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Smash</title>
     <link rel="stylesheet" href="../html-topics-CSS/lesson-style.css" />
+    <style>
+      .example-box {
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin: 1.5em 0;
+        border-radius: 5px;
+        background-color: #fdfdfd;
+      }
+      .sample-pic {
+        height: 20rem;
+        width: 20rem;
+        object-fit: cover;
+        margin-inline: auto;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -27,118 +42,195 @@
     </nav>
     <aside>
       <h3>HTML</h3>
-      <a href="lesson_1.html">Intro to HTML</a>
-      <a href="lesson_2.html">Elements & Tags</a>
-      <a href="lesson_3.html">HTML boilerplate</a>
-      <a href="lesson_4.html">Headings & List</a>
-      <a href="lesson_5.html">Links & Images</a>
-      <a class="active" href="lesson_6.html">Tables & Form</a>
+      <a href="lesson_1.html">1. Intro to HTML</a>
+      <a href="lesson_2.html">2. Elements & Tags</a>
+      <a href="lesson_3.html">3. HTML boilerplate</a>
+      <a href="lesson_4.html">4. Headings & List</a>
+      <a href="lesson_5.html">5. Links</a>
+      <a class="active" href="lesson_6.html">6. Images</a>
     </aside>
 
     <main>
-      <h2 id="content-ONE">Introduction</h2>
-      <p>HTML is the standard markup language for creating Web pages.</p>
+      <h2>Lesson 6: HTML Images</h2>
+      <!-- Introduction Section -->
+      <section id="content-ONE">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to Lesson 6 of our HTML/CSS tutorial series! In this lesson,
+          we'll cover how to effectively use images in HTML to enhance the
+          visual appeal of web pages. You’ll learn about the essential
+          attributes for embedding images, how to link images to other web
+          pages, and how to handle images hosted on other servers.
+        </p>
+      </section>
+
+      <!-- Lesson Overview Section -->
+      <section id="content-TWO">
+        <h2>Lesson Overview</h2>
+        <p>
+          This lesson will walk you through the basics of working with images in
+          HTML. By the end of this lesson, you will understand:
+        </p>
+        <div class="list">
+          <ul>
+            <li>
+              How to use the <code>&lt;img></code> tag to insert images into
+              your web pages
+            </li>
+            <li>
+              The purpose and usage of the <code>src</code> and
+              <code>alt</code> attributes
+            </li>
+            <li>How to reference images hosted on external servers</li>
+            <li>How to use images as clickable links to other web pages</li>
+          </ul>
+        </div>
+      </section>
+      <p>Images can improve the design and the appearance of a web page.</p>
       <br />
-      <h3>What is HTML?</h3>
+      <img class="sample-pic" src="../pic/van.jpg" alt="Sample pic" />
+      <br /><br />
+      <h3>Example</h3>
+      <div class="example-box">
+        <p>&lt;img src="../pic/van.jpg" alt="Sample pic" /></p>
+      </div>
+      <hr />
+      <h2 id="content-THREE">HTML Images Syntax</h2>
+      <p>
+        The HTML <span style="font-weight: bold">&lt;img></span> tag is used to
+        embed an image in a web page.
+      </p>
+      <br />
+      <p>
+        Images are not technically inserted into a web page; images are linked
+        to web pages. The <span style="font-weight: bold">&lt;img></span> tag
+        creates a holding space for the referenced image.
+      </p>
+      <br />
+      <p>
+        The <span style="font-weight: bold">&lt;img></span> tag is empty, it
+        contains attributes only, and does not have a closing tag.
+      </p>
+      <br />
+      <p>
+        The <span style="font-weight: bold">&lt;img></span> tag has two required
+        attributes:
+      </p>
+      <br />
       <ul>
-        <li>HTML stands for Hyper Text Markup Language</li>
-        <li>HTML describes the structure of Web pages using markup</li>
-        <li>HTML elements are the building blocks of HTML pages</li>
-        <li>HTML elements are represented by tags</li>
         <li>
-          HTML tags label pieces of content such as "heading", "paragraph",
-          "table", and so on
+          <span style="font-weight: bold">src</span> - Specifies the path to the
+          image
         </li>
         <li>
-          Browsers do not display the HTML tags, but use them to render the
-          content of the page
+          <span style="font-weight: bold">alt</span> - Specifies an alternate
+          text for the image
+        </li>
+      </ul>
+      <br />
+      <h3>Syntax</h3>
+      <div class="example-box">
+        <p>&lt;img src="../pic/van.jpg" alt="Sample pic" /></p>
+      </div>
+
+      <hr />
+      <h2 id="content-FOUR">The src Attribute</h2>
+      <p>The required src attribute specifies the path (URL) to the image.</p>
+      <br />
+      <p>
+        <span style="font-weight: bold">Note:</span> When a web page loads, it
+        is the browser, at that moment, that gets the image from a web server
+        and inserts it into the page. Therefore, make sure that the image
+        actually stays in the same spot in relation to the web page, otherwise
+        your visitors will get a broken link icon. The broken link icon and the
+        alt text are shown if the browser cannot find the image.
+      </p>
+      <br />
+      <h3>Example:</h3>
+      <div class="example-box">
+        <p>&lt;img src="../pic/van.jpg" alt="Sample pic" /></p>
+      </div>
+      <hr />
+      <h2 id="content-FIVE">The alt Attribute</h2>
+      <p>
+        The required <span style="font-weight: bold">alt</span> attribute
+        provides an alternate text for an image, if the user for some reason
+        cannot view it (because of slow connection, an error in the src
+        attribute, or if the user uses a screen reader).
+      </p>
+      <br />
+      <p>
+        The value of the <span style="font-weight: bold">alt</span> attribute
+        should describe the image:
+      </p>
+      <br />
+      <h3>Example:</h3>
+      <div class="example-box">
+        <p>&lt;img src="../pic/van.jpg" alt="Picture of Someone" /></p>
+      </div>
+      <p>
+        <span style="font-weight: bold">Note:</span> If a browser cannot find an
+        image, it will display the value of the
+        <span style="font-weight: bold">alt</span> attribute.
+      </p>
+      <hr />
+      <h2 id="content-SIX">Images on Another Server/Website</h2>
+      <p>Some web sites point to an image on another server.</p>
+      <p>
+        To point to an image on another server, you must specify an absolute
+        (full) URL in the <span style="font-weight: bold">src</span> attribute:
+      </p>
+      <br />
+      <h3>Example:</h3>
+      <br />
+      <img
+        class="sample-pic"
+        src="https://mcdn.wallpapersafari.com/medium/7/88/akJq2F.jpg"
+        alt="Haerin"
+      />
+      <br />
+      <div class="example-box">
+        <p>
+          &lt;img src="https://mcdn.wallpapersafari.com/medium/7/88/akJq2F.jpg"
+          alt="Haerin" />
+        </p>
+      </div>
+      <hr />
+      <h2 id="content-SEVEN">Image as a Link</h2>
+      <p>
+        To use an image as a link, put the
+        <span style="font-weight: bold">&lt;img></span> tag inside the
+        <span style="font-weight: bold">&lt;a></span> tag:
+      </p>
+      <br />
+      <h3>Example</h3>
+      <div class="example-box">
+        <p>&lt;a href="default.asp"></p>
+        <p>&lt;img src="sample.jpg" alt="Sample pic"></p>
+        <p>&lt;/a></p>
+      </div>
+      <hr />
+      <h2>Chapter Summary</h2>
+      <ul>
+        <li>
+          Use the HTML <span style="font-weight: bold">&lt;img></span> element
+          to define an image
+        </li>
+        <li>
+          Use the HTML <span style="font-weight: bold">src</span> attribute to
+          define the URL of the image
+        </li>
+        <li>
+          Use the HTML <span style="font-weight: bold">alt</span> attribute to
+          define an alternate text for an image, if it cannot be displayed
         </li>
       </ul>
 
-      <hr />
-      <h2 id="content-TWO">Lesson overview</h2>
-      <p>
-        This section contains a general overview of topics that you will learn
-        in this lesson.
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
-      <hr />
-      <h2>CSS Styles</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorum
-        alias tenetur exercitationem, velit sint. Eligendi, minus veritatis
-        ducimus, esse assumenda quam, ut ex aliquam saepe cum suscipit? Neque
-        quae soluta fugit rerum dolorum deserunt quas odio. Dicta esse veniam
-        obcaecati odio minus. Nisi, architecto aut libero consequatur similique
-        quidem perferendis optio dolorem voluptatibus eaque repellat provident!
-        Veritatis laboriosam provident quas ad harum accusantium mollitia
-        deserunt veniam debitis praesentium quibusdam optio eaque asperiores
-        culpa doloremque voluptatum, ex dolore ipsa adipisci expedita eligendi!
-        Officiis exercitationem aut consectetur earum mollitia, rem minima animi
-        placeat nisi. Possimus quia doloremque quae praesentium explicabo
-        quaerat! Maxime tempore, corporis modi molestias nesciunt vel atque fuga
-        ab tempora quae iure sapiente rem vero aperiam doloribus illo eveniet
-        delectus accusantium facere voluptas? Fugit, totam ipsa. Corrupti
-        ratione reprehenderit aliquam vel dicta placeat, ipsa eveniet delectus
-        nihil sequi asperiores. In nostrum voluptatum quaerat omnis ab.
-        Distinctio quaerat, ex, quae obcaecati quam ipsum quis, dolore vel
-        inventore odio accusamus! Nam iusto reiciendis ea tempora consequatur
-        quibusdam, exercitationem labore esse eaque placeat expedita. Quasi
-        harum nisi sunt laboriosam odit reprehenderit, praesentium
-        necessitatibus minus enim commodi maxime unde beatae id deserunt dolorum
-        ea veniam voluptates quam incidunt neque facilis molestias iusto. Neque?
-      </p>
+      <!-- Next Lesson Button -->
+      <div style="text-align: center; margin-top: 20px">
+        <a href="/html-topics/lesson_5.html" class="lesson-button">Previous</a>
+        <a href="/index.html" class="next-lesson-button">Finish</a>
+      </div>
     </main>
   </body>
 </html>
