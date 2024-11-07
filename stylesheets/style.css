@@ -1,235 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    color: #222831;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #222831;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #EEEEEE;
-    min-height: calc(100vh - 4rem);
-    width: 100%;
+  background-color: #eeeeee;
+  min-height: calc(100vh - 4rem);
+  width: 100%;
 }
 
 header {
-    background-color: aliceblue;
-    width: 100%;
-    height: 4rem;
-    position: fixed;
-    top: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 1em;
-    z-index: 100;
+  background-color: aliceblue;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  z-index: 100;
 }
 
 nav {
-    margin-left: auto;
-    display: flex;
-    height: 100%;
-    align-content: center;
+  margin-left: auto;
+  display: flex;
+  height: 100%;
+  align-content: center;
 }
 
 nav a {
-    padding-inline: 1rem;
-    align-content: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-    height: 100%;
+  padding-inline: 1rem;
+  align-content: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  height: 100%;
 }
 
 nav a:hover {
-    color: black;    
-    background-color: #3cc8d0;
-    transition: ease-in 0.1s;
+  color: black;
+  background-color: #3cc8d0;
+  transition: ease-in 0.1s;
 }
 
 main {
-    background-color: #EEEEEE;
-    padding: 0 12rem 0rem 12rem;
-    gap: 2rem;
-    min-height: 100vh;
+  background-color: #eeeeee;
+  padding: 0 12rem 0rem 12rem;
+  gap: 2rem;
+  min-height: 100vh;
 }
 
 #groupName {
-    width: 100%;
-    height: 100vh;
-    font-size: 3rem;
-    text-align: center;
-    align-content: center;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+  width: 100%;
+  height: 100vh;
+  font-size: 3rem;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
-#courses {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4rem;
+#HTML,
+#CSS {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
-#courses h1 {
-    font-size: 4rem;
-    text-align: center;
-    align-content: center;
-    margin-top: 15px;
+#HTML,
+#CSS h1 {
+  font-size: 4rem;
+  text-align: center;
+  align-content: center;
+  margin-top: 15px;
 }
 
-#courses h3 {
-    font-size: 2rem;
-    text-align: center;
-    align-content: center;
-    margin-bottom: 15px;
+#HTML,
+#CSS h3 {
+  font-size: 2rem;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 15px;
 }
 
 .courseContainer {
-    padding: 2rem;
-    gap: 2rem;
-    border-radius: 1rem;
-    background-color: #222831;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-template-rows: auto auto auto;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: #222831;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-rows: auto auto auto;
 }
 
 .tutorial {
-    border-radius: 1rem;
-    background-color: #393E46;
-    width: auto;
-    height: auto;
-    font-size: 1rem;
-    padding: 1em;
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
+  border-radius: 1rem;
+  background-color: #393e46;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
 }
 
 .tutorial h3,
 .tutorial p {
-    color: #EEEEEE;
+  color: #eeeeee;
 }
 
-
 .button {
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    width: 100%;
-    height: 3em;
-    background-color: #00ADB5;
-    color: black;
-    border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 3em;
+  background-color: #00adb5;
+  color: black;
+  border: none;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .button:active {
-    background-color: #1899a0;
-    color: #fff;
+  background-color: #1899a0;
+  color: #fff;
 }
 
 #groupIntro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    text-align: start;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  text-align: start;
+  margin-bottom: 4rem;
 }
 
 #groupIntro h1 {
-    font-size: 4rem;
-    margin-block: 2rem;
-    width: 50%;
+  font-size: 4rem;
+  margin-block: 2rem;
+  width: 50%;
 }
 
 #groupIntro p {
-    font-size: 1.25rem;
-    width: 50%;
+  font-size: 1.25rem;
+  width: 50%;
 }
 
 #groupObj {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    text-align: end;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  text-align: end;
+  margin-bottom: 4rem;
 }
 
 #groupObj h1 {
-    font-size: 4rem;
-    margin-block: 2rem;
-    align-self: flex-end;
-    width: 50%;
+  font-size: 4rem;
+  margin-block: 2rem;
+  align-self: flex-end;
+  width: 50%;
 }
 
 #groupObj p {
-    font-size: 1.25rem;
-    align-self: flex-end;
-    width: 50%;
+  font-size: 1.25rem;
+  align-self: flex-end;
+  width: 50%;
 }
 
 #groupMem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 4rem;
 }
 
 #groupMem h1 {
-    font-size: 4rem;
-    text-align: center;
-    margin-block: 2rem;
-    align-content: center;
-    text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  margin-block: 2rem;
+  align-content: center;
+  text-transform: uppercase;
 }
 
 .profileContainer {
-    display: grid;
-    padding: 2rem;
-    gap: 2rem;
-    border-radius: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-template-rows: auto auto;
-    background-color: #222831;
+  display: grid;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-rows: auto auto;
+  background-color: #222831;
 }
 
 .profile {
-    background-color: #393E46;
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 2;
-    border-radius: 1rem;
-    padding: 2rem;
+  background-color: #393e46;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .profile h2 {
-    color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .profile * {
-    margin-inline: auto;
+  margin-inline: auto;
 }
 
 .pic {
-    height: 16rem;
-    width: 16rem;
-    object-fit: cover;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 1rem;
+  height: 16rem;
+  width: 16rem;
+  object-fit: cover;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
 }
