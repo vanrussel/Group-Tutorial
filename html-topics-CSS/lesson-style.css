@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3498DB;
+    background-color: #18b8c0;
     transition: ease-in-out 0.1s;
 }
 
@@ -53,7 +53,7 @@ nav a:active {
 }
 
 nav svg {
-    fill: #4B4453;
+    fill: black;
 }
 
 main {
