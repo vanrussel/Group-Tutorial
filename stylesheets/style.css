@@ -151,57 +151,12 @@ main {
   color: #fff;
 }
 
-#groupIntro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-  text-align: start;
-  margin-bottom: 4rem;
-}
-
-#groupIntro h1 {
-  font-size: 4rem;
-  margin-block: 2rem;
-  width: 50%;
-}
-
-#groupIntro p {
-  font-size: 1.25rem;
-  width: 50%;
-}
-
-#groupObj {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-  text-align: end;
-  margin-bottom: 4rem;
-}
-
-#groupObj h1 {
-  font-size: 4rem;
-  margin-block: 2rem;
-  align-self: flex-end;
-  width: 50%;
-}
-
-#groupObj p {
-  font-size: 1.25rem;
-  align-self: flex-end;
-  width: 50%;
-}
-
 #groupMem {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 4rem;
 }
 
 #groupMem h1 {
